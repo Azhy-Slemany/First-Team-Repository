@@ -14,6 +14,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    
+    defaults:
+      run:
+        working-directory: ./rest_api
 
     steps:
       - uses: actions/checkout@v3
@@ -24,6 +28,5 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.7.7'
-      - working-directory: ./rest_api
       - run: flutter pub get
       - run: flutter build apk
