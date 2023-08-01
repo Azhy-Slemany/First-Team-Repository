@@ -24,6 +24,6 @@ jobs:
       - uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.7.7'
-      - run: cd ./rest_api
+      - working-directory: ./rest_api
       - run: flutter pub get
       - run: flutter build apk
