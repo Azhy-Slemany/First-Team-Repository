@@ -1,0 +1,4 @@
+#Tue Aug 01 14:22:44 AST 2023
+base.0=/Users/azhyslemany/TeamProjects/First-Team-Repository/rest_api/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
