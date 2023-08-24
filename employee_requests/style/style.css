@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../image/background.jpg');
+    background-color: #0005;
+    background-blend-mode: color-burn;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    height: 92vh;
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner {
+    font-size: 20px;
+    color: #abdbe3;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    background-color: transparent;
+    backdrop-filter: blur(40px);
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    padding: 30px;
+    border-bottom-right-radius: 90px;
+    border-top-left-radius: 90px;
+
+}
+
+.insertion a {
+    margin-right: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    text-decoration: none;
+    background-color: transparent;
+    backdrop-filter: blur(40px);
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #abdbe3;
+    text-transform: uppercase;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.insertion a:hover {
+    background-color: #d15406;
+    color: #abdbe3;
+}
+
+.table {
+    min-height: 70vh;
+    width: 100%;
+    margin-top: 20px;
+    background-color: transparent;
+    backdrop-filter: blur(40px);
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 16px;
+    color: #fff;
+    overflow: auto;
+
+}
+
+table {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    border-collapse: separate; 
+    border-spacing: 0;
+    cursor: pointer;
+    
+}
+
+.table::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.table::-webkit-scrollbar-thumb {
+    border-radius: 16px;
+    background-color: #d76219a8;
+    visibility: hidden;
+}
+
+.table:hover::-webkit-scrollbar-thumb {
+
+    visibility: visible;
+}
+
+.table::-webkit-scrollbar-corner {
+
+    visibility: hidden;
+}
+
+
+
+table th { 
+    font-size: 20px;
+    background-image: url("../image/background.jpg");
+    background-color: #240c3eb2;
+    background-blend-mode: multiply;
+    border-bottom: 3px solid #d76119;
+    color: #abdbe3;
+    text-align: center;
+    vertical-align: middle;
+    padding: 8px;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+table td {
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+    padding: 8px;
+    text-transform: capitalize;
+    white-space: nowrap;
+}
+
+table tr td #profile_image {
+    width: 32px;
+    height: 32px;
+    border: 2px solid rgba(255, 255, 255, .2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 100%;
+    vertical-align: middle;
+    background-size: cover;
+}
+
+table tr #profile_name {
+    text-align: left;
+    
+
+}
+table tr #location{
+    min-width: 150px;
+}
+table tr #phone{
+    min-width: 150px;
+}
+table tr #cv {
+    min-width: 80px;
+    
+}
+table tr  #cv a{
+    text-decoration: none;
+    color:#fff;
+    padding: 6px 8px;
+    background-color: #d76119;
+    border-radius: 20px;
+}
+table tr  #cv a:hover{
+    text-decoration: none;
+    color:#fff;
+    padding: 6px 8px;
+    background-color: #17b41fc2;
+    border-radius: 20px;
+
+}
+.row:nth-child(even) {
+    background-color: #fff4;
+}
+
+.row:hover #cv a{ 
+    background-color: #17b41fc2;
+
+}
+.row:hover {
+    background-color: #d76119;
+
+}
+
+.row:hover #id {
+    color: #fff;
+
+}
+
+#id {
+    color: #d76119;
+}
+
+.fa-pen-to-square {
+    color: #19d722;
+}
+
+.fa-trash-can {
+    color: #d71f19;
+}
